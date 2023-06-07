@@ -9,7 +9,7 @@ export const BrowserRoutes = () => {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route index element={<ShowList />} />
+          <Route index path='/Movie-Booking' element={<ShowList/>} />
           <Route path='/summary' element={<ShowSummary />} />
           <Route path='*' element={<EmptyPage />} />
         </Routes>

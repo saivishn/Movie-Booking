@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Grid, Card, CardContent, Button, CardMedia, ButtonBase, StepIcon } from "@mui/material";
+import { Grid, Card,  CardMedia, ButtonBase } from "@mui/material";
 import { ApiCalls } from "../Connections/Api/ApiCalls";
 import { json, useLocation, useNavigate } from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
+
 
 import IconButton from '@mui/material/IconButton';
 
@@ -19,6 +20,7 @@ const ShowList = () => {
       console.log("Data empty in fetchData");
       throw Error("Data Empty");
     }
+    console.log(response);
     setList(response);
     localStorage.setItem("data", JSON.stringify(response));
   };
@@ -35,6 +37,7 @@ const ShowList = () => {
       fetchData();
     } else {
       setList(JSON.parse(localStorage.getItem("data")));
+      
     }
   }, []);
 
