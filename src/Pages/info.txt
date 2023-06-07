@@ -1,0 +1,44 @@
+{/* <Stack spacing={2}>
+                <Card>
+                    <CardMedia
+                        component="img"
+                        height='60%'
+                        image={show.show.image.original}
+                        alt={show.show.name}
+                    />
+                    <Button size="large" style={{ marginLeft: "85%", backgroundColor: "peachpuff", fontWeight: 30, fontSize: "big" }} 
+                    onClick={handleBook}>
+                        Book
+                        </Button>
+                    <Button size="large" onClick={onBackClick}>Back</Button>
+                    <CardContent>
+                        <h1>{<i>{show.show.name}</i>}</h1>
+                        <h3>language</h3>   <i>{show.show.language}</i>
+                        <h3>Genres</h3> <i>{show.show.genres[0]}</i> , <i>{show.show.genres[1]}</i>
+                    </CardContent>
+                </Card>
+
+
+
+                <Accordion>
+                    <AccordionSummary
+                    >
+                        <Typography><Typography><h3 style={{color:"red"}}>Premired</h3>   <b>{show.show.premiered}</b></Typography><h2 style={{ color: "red" }}>Status</h2> <b>Currently  {show.show.status}</b></Typography>
+                        
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                            <h3>score : {show.score}</h3>
+                            <h3>Premired On : {show.show.premiered}</h3>
+                            <h3>Runtime  : {show.show.runtime} minutes</h3>
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                    <AccordionSummary>
+                        <Typography><h2 style={{ color: "red" }}>Summary</h2>
+                            <i>{show.show.summary}</i></Typography>
+
+                    </AccordionSummary>
+                </Accordion>
+            </Stack> */}
