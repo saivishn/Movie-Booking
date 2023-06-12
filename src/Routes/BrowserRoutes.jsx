@@ -10,7 +10,7 @@ export const BrowserRoutes = () => {
       <BrowserRouter>
         <Routes>
           <Route index path='/Movie-Booking' element={<ShowList/>} />
-          <Route path='/summary' element={<ShowSummary />} />
+          <Route path='/Movie-Booking/summary' element={<ShowSummary />} />
           <Route path='*' element={<EmptyPage />} />
         </Routes>
       </BrowserRouter>
